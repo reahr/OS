@@ -1,0 +1,30 @@
+Reah Rajmangal
+Operating Systems Lab 2 README
+
+The source code consists of three java files and requires Java 1.8.* in order to run.
+Scheduler.java is the main file that needs to run.
+
+***
+In the working directory (RR-LAB-2), use the following commands:
+-> javac *.java //3 class files should appear in directory
+-> java <program-name> <input-filename> OR -> java <program-name> --verbose <input-filename>
+
+If successful, console will print the expected outputs for the four algorithms in order.
+If not successful, console will log the error that occurred (regarding formatting of input/file read).
+
+It is expected that random-numbers is a valid file in the working directory.
+
+Errors include:
+-Input file not found or could not be read
+-General format of input file is not correct
+
+***
+Descriptions of Classes created:
+-The RandomBurst class parses the random-numbers file for each algorithm.
+
+-The Process class creates an Process that uses the parsed information from input-file to create the schedulers.
+
+-The SortByRemainder class is a comparator that is used to sort Processes based off of their remaining total CPU time.
+
+Note: These classes are not private for the sake of accessing data fields immediately rather than calling methods. The classes are instead package-private by default.
+There are no individual classes for each algorithm, in order to make calling each algorithm easier.
